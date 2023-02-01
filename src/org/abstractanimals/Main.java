@@ -20,16 +20,19 @@ public class Main {
 		d.faiVerso();
 		d.dormi();
 		d.mangia();
+		d.faiNuotare();
 		
 		System.out.println(a.getNome());
 		a.faiVerso();
 		a.dormi();
 		a.mangia();
+		a.faiVolare();
 		
 		System.out.println(p.getNome());
 		p.faiVerso();
 		p.dormi();
 		p.mangia();
+		p.faiVolare();
 		
 	}
 

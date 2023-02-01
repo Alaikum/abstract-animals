@@ -1,6 +1,8 @@
 package org.abstractanimals;
 
-public class Aquila extends Animale {
+import org.interfaceanimals.IVolante;
+
+public class Aquila extends Animale implements IVolante {
 
 	public Aquila(String nome) {
 		super(nome);
@@ -18,6 +20,12 @@ public class Aquila extends Animale {
 		System.out.println("L'aquila preda marmotte,"
 				+ " lepri, fagianidi, corvidi, tartarughe,"
 				+ " piccioni, conigli, giovani cerbiatti.");
+		
+	}
+
+	@Override
+	public void faiVolare() {
+		System.out.println("Sto volando, disse "+getNome()+".");
 		
 	}
 

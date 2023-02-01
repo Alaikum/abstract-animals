@@ -1,6 +1,8 @@
 package org.abstractanimals;
 
-public class Passerotto extends Animale{
+import org.interfaceanimals.IVolante;
+
+public class Passerotto extends Animale implements IVolante{
 
 	public Passerotto(String nome) {
 		super(nome);
@@ -16,6 +18,12 @@ public class Passerotto extends Animale{
 	@Override
 	public void mangia() {
 		System.out.println("Il passerotto si nutre di semi e frutta.");
+		
+	}
+
+	@Override
+	public void faiVolare() {
+		System.out.println("Sto volando, disse "+getNome()+".");
 		
 	}
 

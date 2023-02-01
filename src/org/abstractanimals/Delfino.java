@@ -1,6 +1,8 @@
 package org.abstractanimals;
 
-public class Delfino extends Animale {
+import org.interfaceanimals.INuotante;
+
+public class Delfino extends Animale implements INuotante {
 
 	public Delfino(String nome) {
 		super(nome);
@@ -17,6 +19,11 @@ public class Delfino extends Animale {
 	public void mangia() {
 		System.out.println("Il delfino si nutre di pesci e piccoli molluschi.");
 
+	}
+
+	@Override
+	public void faiNuotare() {
+		System.out.println("Sto nuotando, disse "+getNome()+".");
 	}
 
 }
